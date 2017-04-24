@@ -40,5 +40,5 @@ $ ./vendor/bin/propel build
 ## Run a dev server
 
 ```bash
-$ php -S 127.0.0.1:8000 app
+$ php -S 127.0.0.1:8000 app/index.php
 ```
