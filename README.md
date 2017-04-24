@@ -34,7 +34,7 @@ $ ./vendor/bin/propel convert-conf
 # Will create a migration by comparing db/config/schema.xml with you configured database :
 $ ./vendor/bin/propel diff
 # Will migrate the database to the lastest version
-$ ./vendor/bin/propel build
+$ ./vendor/bin/propel migrate
 ```
 
 ## Run a dev server
