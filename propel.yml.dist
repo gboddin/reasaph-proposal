@@ -14,7 +14,7 @@ propel:
           charset: utf8
   paths:
     schemaDir: config/db
-    phpDir: src/orm
+    phpDir: src/Orm
     phpConfDir: config/db
     sqlDir: config/db
     migrationDir: migrations
