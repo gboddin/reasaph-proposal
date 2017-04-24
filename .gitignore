@@ -5,3 +5,4 @@ vendor
 src/Orm/Base
 src/Orm/Map
 test.sqlite
+config/db/config.php
