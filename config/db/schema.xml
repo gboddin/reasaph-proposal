@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<database name="reasaph" defaultIdMethod="native" namespace="Asaph\Orm">
+  <table name="post" idMethod="native" phpName="Post">
+    <column name="id" phpName="Id" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
+    <column name="userId" phpName="UserId" type="INTEGER" required="true"/>
+    <column name="hash" phpName="Hash" type="CHAR" size="32" required="true"/>
+    <column name="created" phpName="Created" type="TIMESTAMP" required="true"/>
+    <column name="source" phpName="Source" type="VARCHAR" size="255" required="true"/>
+    <column name="thumb" phpName="Thumb" type="VARCHAR" size="255" required="true"/>
+    <column name="image" phpName="Image" type="VARCHAR" size="255" required="true"/>
+    <column name="title" phpName="Title" type="LONGVARCHAR" required="true"/>
+    <foreign-key foreignTable="user" phpName="User">
+      <reference local="userId" foreign="id"/>
+    </foreign-key>
+    <vendor type="mysql">
+      <parameter name="Engine" value="MyISAM"/>
+    </vendor>
+  </table>
+  <table name="user" idMethod="native" phpName="User">
+    <column name="id" phpName="Id" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
+    <column name="name" phpName="Name" type="VARCHAR" size="255" required="true"/>
+    <column name="pass" phpName="Pass" type="CHAR" size="32" required="true"/>
+    <column name="loginId" phpName="Login" type="CHAR" size="32" required="true"/>
+    <vendor type="mysql">
+      <parameter name="Engine" value="MyISAM"/>
+    </vendor>
+  </table>
+</database>

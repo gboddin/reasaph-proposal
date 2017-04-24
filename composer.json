@@ -1,0 +1,15 @@
+{
+    "require": {
+        "slim/slim": "~3",
+        "propel/propel": "~2.0@dev",
+        "projek-xyz/slim-plates": "~0.2",
+        "phlak/config": "^1.0"
+    },
+    "autoload": {
+      "psr-4" :
+      {
+        "Asaph\\" : "src/"
+      }
+    }
+
+}

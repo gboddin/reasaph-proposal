@@ -1,0 +1,21 @@
+propel:
+  generator:
+    recursive: true
+    packageObjectModel: true
+  database:
+    connections:
+      reasaph:
+        adapter: mysql
+        dsn: mysql:host=localhost;dbname=reasaph
+        #dsn: sqlite:test.sqlite
+        user: root
+        password:
+        settings:
+          charset: utf8
+  paths:
+    schemaDir: config/db
+    phpDir: src/orm
+    phpConfDir: config/db
+    sqlDir: config/db
+    migrationDir: migrations
+    outputDir: config/db

@@ -1,0 +1,7 @@
+migrations
+.idea
+propel.yml
+vendor
+src/Orm/Base
+src/Orm/Map
+test.sqlite

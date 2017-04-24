@@ -1,0 +1,16 @@
+# Site settings
+site:
+  name: The website title
+  description: A super description
+
+# View settings
+view:
+  template: asaph
+
+# Rouging
+# 1st is an array of http methods
+# 2nd is the path to handle ( see https://www.slimframework.com/docs/objects/router.html, we're passing this to map()
+# 3rd is a callable
+routing:
+  - [['GET'],'/','\Asaph\Controller\PostList']
+
